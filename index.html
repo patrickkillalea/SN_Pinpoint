@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .nav-wrapper {
+            background-color: #343d47;
+        }
+
+        .side-nav {
+            background-color: #343d47 !important;
+        }
+
+        .row {
+            margin-bottom: 0px !important;
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav>
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo">Logo</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="sass.html">
+                                <div style="font-size: 20px">Patrick Killalea</div>
+                            </a></li>
+                            <li><a href="sass.html"><i class="fa fa-3x fa-comments-o"></i></a></li>
+                            <li><a href="sass.html"><i class="fa fa-3x fa-search"></i></a></li>
+                            <li><a href="badges.html"><i class="fa fa-3x fa-question-circle"></i></a></li>
+                            <li><a href="collapsible.html"><i class="fa fa-3x fa-cog"></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+
+                <nav>
+
+                    <ul id="slide-out" class="side-nav fixed">
+                        <div style="max-width: 250px">
+                            <img src="https://unumtest.service-now.com/6717990537051200c4c07c1643990e77.iix" style="max-width: 100%;" />
+                        </div>
+                    </ul>
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+                </nav>
+
+            </div>
+            <div class="col-md-10">
+
+                <iframe src="http://snipr0d1web01.up.dev.upc:8080/#/" width="100%" class="myIframe"></iframe>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+</html>
+<script>
+    $('.button-collapse').sideNav({
+        menuWidth: 370, // Default is 240
+        edge: 'left', // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+);
+</script>
+<script type="text/javascript" language="javascript">
+    $('.myIframe').css('height', $(window).height() + 'px');
+</script>
